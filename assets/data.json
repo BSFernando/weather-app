@@ -1,0 +1,139 @@
+{
+    "data": [
+        {
+            "coord": {
+                "lon": -46.6361,
+                "lat": -23.5475
+            },
+            "weather": [
+                {
+                    "id": 803,
+                    "main": "Clouds",
+                    "description": "nublado",
+                    "icon": "04d"
+                }
+            ],
+            "base": "stations",
+            "main": {
+                "temp": 22.07,
+                "feels_like": 22.34,
+                "temp_min": 20.94,
+                "temp_max": 22.83,
+                "pressure": 1016,
+                "humidity": 77,
+                "sea_level": 1016,
+                "grnd_level": 925
+            },
+            "visibility": 10000,
+            "wind": {
+                "speed": 5.66,
+                "deg": 190
+            },
+            "clouds": {
+                "all": 75
+            },
+            "dt": 1744656103,
+            "sys": {
+                "type": 1,
+                "id": 8394,
+                "country": "BR",
+                "sunrise": 1744622378,
+                "sunset": 1744664008
+            },
+            "timezone": -10800,
+            "id": 3448439,
+            "name": "São Paulo",
+            "cod": 200
+        },
+        {
+            "coord": {
+                "lon": -51.23,
+                "lat": -30.0331
+            },
+            "weather": [
+                {
+                    "id": 802,
+                    "main": "Clouds",
+                    "description": "nuvens dispersas",
+                    "icon": "03d"
+                }
+            ],
+            "base": "stations",
+            "main": {
+                "temp": 23.76,
+                "feels_like": 23.39,
+                "temp_min": 23.75,
+                "temp_max": 24.59,
+                "pressure": 1017,
+                "humidity": 46,
+                "sea_level": 1017,
+                "grnd_level": 1014
+            },
+            "visibility": 10000,
+            "wind": {
+                "speed": 3.6,
+                "deg": 140
+            },
+            "clouds": {
+                "all": 40
+            },
+            "dt": 1744656546,
+            "sys": {
+                "type": 1,
+                "id": 8467,
+                "country": "BR",
+                "sunrise": 1744623797,
+                "sunset": 1744664794
+            },
+            "timezone": -10800,
+            "id": 3452925,
+            "name": "Porto Alegre",
+            "cod": 200
+        },
+        {
+            "coord": {
+                "lon": -60.025,
+                "lat": -3.1019
+            },
+            "weather": [
+                {
+                    "id": 802,
+                    "main": "Clouds",
+                    "description": "nuvens dispersas",
+                    "icon": "03d"
+                }
+            ],
+            "base": "stations",
+            "main": {
+                "temp": 29.27,
+                "feels_like": 35.27,
+                "temp_min": 26.28,
+                "temp_max": 29.27,
+                "pressure": 1010,
+                "humidity": 79,
+                "sea_level": 1010,
+                "grnd_level": 1005
+            },
+            "visibility": 10000,
+            "wind": {
+                "speed": 2.57,
+                "deg": 70
+            },
+            "clouds": {
+                "all": 40
+            },
+            "dt": 1744656073,
+            "sys": {
+                "type": 1,
+                "id": 8412,
+                "country": "BR",
+                "sunrise": 1744624728,
+                "sunset": 1744668083
+            },
+            "timezone": -14400,
+            "id": 3663517,
+            "name": "Manaus",
+            "cod": 200
+        }
+    ]
+}
