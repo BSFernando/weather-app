@@ -1,0 +1,146 @@
+<div id="display-input">
+
+    <img style="width: 70%; height: auto;" src="./assets/clouds_sun.png" />
+
+    <div id="btn-txt-input">
+        <input type="text" class="input-city-data"  [(ngModel)]="cityChoice" #newItem>
+        <button (click)="getData(newItem.value)" class="btn-get-data">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </div>
+</div>
+
+<div id="display-output">
+    <div id="display-output-box" [@openClose]="changeOpacity ? 'open' : 'closed'" >
+
+        <section  id="display-cloud-data">
+                <label>{{ data }}</label>
+        </section>
+
+        
+        <section  id="display-all-temp">
+            <div id="display-temp">
+                <label>{{ temp }}°C</label>
+            </div>
+
+            <div id="display-temp-min-max">
+
+                <div class="text-temp-min-max">
+                    <i class="fa-solid fa-temperature-high text-red"></i>
+
+                    <div class="hide">*Temperatura máxima</div>
+
+                    <label>{{ tempMax }}°C</label>
+
+                </div>
+
+                <div class="text-temp-min-max">
+                    <i class="fa-solid fa-temperature-high text-blue"></i>
+
+                    <div class="hide">*Temperatura mínima</div>
+
+                    <label>{{ tempMin }}°C</label>
+
+                </div>
+
+                <div class="text-temp-min-max">
+
+
+                    <div class="text-gray">
+                        <i class="fa-solid fa-temperature-three-quarters"></i>
+                        <i class="fa-solid fa-person"></i>
+                    </div>
+
+                    <div class="hide">*Sensação térmica</div>
+
+
+                    <label>{{ feelsLike }}°C</label>
+
+                </div>
+
+
+            </div>
+
+        </section >
+
+        <section  id="display-cloud-info">
+            <div class="icon-text-weather-cloud">
+
+                @if (iconCloud) {
+                    <img  [src]="iconCloud" class="cloud-icon"/>
+                } @else { 
+                    <i class="fa-solid fa-cloud cloud-icon"></i>
+                } 
+    
+                <div class="hide">*Nebulosidade</div>
+                
+                <label>{{ clouds }}</label>
+
+                
+            </div>
+        </section>
+
+
+        <section  id="display-another-data">
+            <div class="icon-text-weather">
+                <label class="title-name">{{ cityName }}</label>
+            </div>
+
+
+            <div class="icon-text-weather">
+                <i class="fa-solid fa-droplet droplet-icon"></i>
+                
+                <div class="hide">*Umidade</div>
+
+                <label>{{ humidity }}%</label>
+            </div>
+            <div class="icon-text-weather">
+                <i class="fa-solid fa-wind wind-icon"></i>
+
+                <div class="hide">*Velocidade do vento</div>
+
+                <label>{{ windSpeedKmH }} km/h</label>
+                <span style="margin-left: 20px; margin-right: 20px;">-</span>
+                
+
+                <i class="fa-solid fa-compass compass-icon" style="margin-right: 5px;"></i>
+
+                <div class="hide">*Direção do vento</div>
+
+                <label>{{ windDirection }}</label>
+            </div>
+            <div class="icon-text-weather">
+                <i class="fa-solid fa-arrow-down  arrow-down-icon"></i>
+
+                <div class="hide">*Pressão</div>
+
+                <label>{{ pressure }}%</label>
+            </div>
+            <div class="icon-text-weather">
+                <i class="fa-solid fa-eye eye-icon"></i>
+
+                <div class="hide">*Visibilidade</div>
+
+                <label>{{ visibilityKm }}km</label>
+            </div>
+            <div class="icon-text-weather">
+
+                <i class="fa-solid fa-sun sun-icon"></i>
+
+                <div class="hide">*Nascer e pôr do Sol</div>
+
+                <label>{{ sunriseTime }}<span style="margin-left: 20px; margin-right: 20px;">-</span>{{sunsetTime}}</label>
+            </div>
+        </section >
+
+    </div>
+</div>
+
+@if (alert) {
+    <div class="alert-box">
+        <div class="alert-msg">
+            <label>CIDADE NÃO ENCONTRADA</label>
+            <button (click)="displayAlertMsg()" class="alert-btn">OK</button>
+        </div>
+    </div>
+}

@@ -1,0 +1,15 @@
+.main{
+    width: 100vw;
+    height: 100svh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Gill Sans", sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+    .main{
+        flex-direction: column;
+        height: fit-content;
+    }
+}
